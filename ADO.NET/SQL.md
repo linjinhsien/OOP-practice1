@@ -42,3 +42,46 @@ graph TD
     B5 --> C5
     B6 --> C6
     B7 --> C7
+```
+    --------------------------------------------------------------------------------------------------------------
+```mermaid
+
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : includes
+    CUSTOMER {
+       nchar  customerid
+       nvarchar  ContactName
+       nvarchar ContactTitle
+       nvarchar Address
+       nvarchar City
+       nvarchar Region
+       nvarchar PostalCode
+       nvarchar Country
+       nvarchar Phone
+       nvarchar Fax
+    }
+    ORDER {
+        string orderNumber
+        date orderDate
+        int  OrderID
+       nchar CustomerID
+        int EmployeeID
+       datetime OrderDate
+        datetime RequiredDate
+       datetime ShippedDate
+       datetime ShipVia
+       money Freight
+      nvarchar  ShipName
+      nvarchar  ShipAddress
+       nvarchar ShipCity
+       nvarchar ShipRegion
+       nvarchar ShipPostalCode
+       nvarchar ShipCountry
+    }
+    LINE_ITEM {
+        int quantity
+        float price
+    }
+
+```
