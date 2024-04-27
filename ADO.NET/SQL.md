@@ -85,3 +85,84 @@ erDiagram
     }
 
 ```
+
+# 50 SQL
+
+## In the CTE Usage section, I’ve added two tasks:
+
+## DEFINE CTE: This represents the creation of the CTE using the WITH clause.
+## USE CTE: This represents the usage of the defined CTE in a subsequent SQL operation.
+
+## Certainly! A Common Table Expression (CTE) is a temporary result set that you can reference within a SELECT, INSERT, UPDATE, DELETE, or MERGE statement. It’s defined using the WITH clause and can make complex queries more readable and maintainable.
+```mermaid
+gantt
+    title T-SQL Commands
+
+    section Data Definition Language (DDL)
+    CREATE DATABASE :done, create1, 2024-04-27, 2024-04-28
+    CREATE TABLE :done, create2, after create1, 1d
+    CREATE INDEX :done, create3, after create2, 1d
+    CREATE VIEW :done, create4, after create3, 1d
+    CREATE PROCEDURE :done, create5, after create4, 1d
+    CREATE FUNCTION :done, create6, after create5, 1d
+    ALTER TABLE :done, alter1, after create6, 1d
+    DROP TABLE :done, drop1, after alter1, 1d
+    DROP INDEX :done, drop2, after drop1, 1d
+    DROP VIEW :done, drop3, after drop2, 1d
+    DROP PROCEDURE :done, drop4, after drop3, 1d
+    DROP FUNCTION :done, drop5, after drop4, 1d
+
+    section Data Manipulation Language (DML)
+    INSERT INTO :done, insert1, 2024-04-29, 2024-04-30
+    UPDATE :done, update1, after insert1, 1d
+    DELETE :done, delete1, after update1, 1d
+    MERGE :done, merge1, after delete1, 1d
+    SELECT INTO :done, selectinto1, after merge1, 1d
+
+    section Data Control Language (DCL)
+    GRANT :done, grant1, 2024-05-01, 2024-05-02
+    REVOKE :done, revoke1, after grant1, 1d
+    DENY :done, deny1, after revoke1, 1d
+
+    section Query Commands
+    SELECT :done, select1, 2024-05-03, 2024-05-04
+    FROM :done, from1, after select1, 1d
+    WHERE :done, where1, after from1, 1d
+    GROUP BY :done, groupby1, after where1, 1d
+    HAVING :done, having1, after groupby1, 1d
+    ORDER BY :done, orderby1, after having1, 1d
+    LIMIT :done, limit1, after orderby1, 1d
+    OFFSET :done, offset1, after limit1, 1d
+    JOIN :done, join1, after offset1, 1d
+    UNION :done, union1, after join1, 1d
+    INTERSECT :done, intersect1, after union1, 1d
+    EXCEPT :done, except1, after intersect1, 1d
+
+    section Subqueries
+    IN :done, in1, 2024-05-05, 2024-05-06
+    EXISTS :done, exists1, after in1, 1d
+    NOT EXISTS :done, notexists1, after exists1, 1d
+    ALL :done, all1, after notexists1, 1d
+    ANY :done, any1, after all1, 1d
+    SOME :done, some1, after any1, 1d
+
+    section Aggregate Functions
+    SUM :done, sum1, 2024-05-07, 2024-05-08
+    AVG :done, avg1, after sum1, 1d
+    MAX :done, max1, after avg1, 1d
+    MIN :done, min1, after max1, 1d
+    COUNT :done, count1, after min1, 1d
+    GROUPING SETS :done, groupingsets1, after count1, 1d
+
+    section String Functions
+    LEN :done, len1, 2024-05-09, 2024-05-10
+    LOWER :done, lower1, after len1, 1d
+    UPPER :done, upper1, after lower1, 1d
+    LTRIM :done, ltrim1, after upper1, 1d
+    RTRIM :done, rtrim1, after ltrim1, 1d
+    CONCAT :done, concat1, after rtrim1, 1d
+
+    section CTE Usage
+    DEFINE CTE :done, cte1, 2024-05-11, 2024-05-12
+    USE CTE :done, cte2, after cte1, 1d
+```
