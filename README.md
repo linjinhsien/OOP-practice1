@@ -139,3 +139,5 @@ gantt
     RTRIM :rtrim1, after ltrim1, 1d
     CONCAT :concat1, after rtrim1, 1d
 ```
+
+https://github.com/linjinhsien/OOP-practice1/blob/main/ADO.NET/SQL.md
